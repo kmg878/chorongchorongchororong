@@ -18,7 +18,7 @@
 <link href="/readingbetter/assets/css/book.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="container-fluid">
+	<div id="container">
 		<c:import url='/WEB-INF/views/include/header.jsp' />
 		<div class="row asideWrap">
 			<div class="col-lg-2" id="navigation">

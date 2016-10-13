@@ -9,37 +9,44 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 <!-- 공통 -->
-<script type="text/javascript" src="/readingbetter/assets/js/jquery/jquery-3.1.0.js"></script>
-<script type="text/javascript" src="/readingbetter/assets/dist/js/bootstrap.js"></script>
-<link href="/readingbetter/assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript"
+	src="/readingbetter/assets/js/jquery/jquery-3.1.0.js"></script>
+<script type="text/javascript"
+	src="/readingbetter/assets/dist/js/bootstrap.js"></script>
+<link href="/readingbetter/assets/dist/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css">
 <!-- /공통 -->
 
-<link href="/readingbetter/assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="/readingbetter/assets/css/main.css" rel="stylesheet"
+	type="text/css">
 <script type="text/javascript" src="/readingbetter/assets/js/main.js"></script>
 </head>
 <body>
-<input type="hidden" name="check-attend" value="${checkAttend }">
+	<input type="hidden" name="check-attend" value="${checkAttend }">
 	<div class="container-fluid">
 		<c:import url='/WEB-INF/views/include/header.jsp' />
 		<div class="row asideWrap">
-			<div class="col-lg-2" id="navigation">
+			<div class="col-lg-2">
 				<c:import url='/WEB-INF/views/include/navi_main.jsp' />
 			</div>
-			<div id="content" class="col-lg-10">
+			<div id="content">
 				<div id="main">
 					<div class="col-lg-6">
+
 						<div id="today_book_box">
 							<h4>오늘의 책</h4>
-							<div id="carousel-today-book" class="carousel slide" data-ride="carousel">
+							<div id="carousel-today-book" class="carousel slide"
+								data-ride="carousel">
 								<!-- Indicators -->
 								<ol class="carousel-indicators">
-									<li data-target="#carousel-today-book" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-today-book" data-slide-to="0"
+										class="active"></li>
 									<li data-target="#carousel-today-book" data-slide-to="1"></li>
 									<li data-target="#carousel-today-book" data-slide-to="2"></li>
 									<li data-target="#carousel-today-book" data-slide-to="3"></li>
 									<li data-target="#carousel-today-book" data-slide-to="4"></li>
 								</ol>
-							
+
 								<!-- Wrapper for slides -->
 								<div class="carousel-inner" role="listbox">
 									<c:forEach var='vo' items='${todayBookList }' varStatus='s'>
@@ -47,7 +54,8 @@
 											<c:when test="${s.index == 0 }">
 												<div class="item active">
 													<a href="/readingbetter/book/booklist?bkwd=${vo.title }">
-														<img class="today-book" src="${vo.cover }" alt="${vo.title }">
+														<img class="today-book" src="${vo.cover }"
+														alt="${vo.title }">
 													</a>
 													<div class="carousel-caption today-book-title">${vo.title }</div>
 												</div>
@@ -55,7 +63,8 @@
 											<c:otherwise>
 												<div class="item">
 													<a href="/readingbetter/book/booklist?bkwd=${vo.title }">
-														<img class="today-book" src="${vo.cover }" alt="${vo.title }">
+														<img class="today-book" src="${vo.cover }"
+														alt="${vo.title }">
 													</a>
 													<div class="carousel-caption today-book-title">${vo.title }</div>
 												</div>
@@ -65,22 +74,27 @@
 								</div>
 
 								<!-- Controls -->
-								<a class="left carousel-control" href="#carousel-today-book" role="button" data-slide="prev"> 
-									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<a class="left carousel-control" href="#carousel-today-book"
+									role="button" data-slide="prev"> <span
+									class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 									<span class="sr-only">Previous</span>
-								</a>
-								<a class="right carousel-control" href="#carousel-today-book" role="button" data-slide="next"> 
-									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								</a> <a class="right carousel-control" href="#carousel-today-book"
+									role="button" data-slide="next"> <span
+									class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 									<span class="sr-only">Next</span>
 								</a>
 							</div>
+							
 						</div>
+
+
 
 						<div id="notice_box">
 							<h4>공지</h4>
 							<ul id="notice_list">
 								<c:forEach items="${listrecent }" var="noticevo">
-									<li><a href="/readingbetter/service/noticeview/${noticevo.no }">${noticevo.title }</a></li>
+									<li><a
+										href="/readingbetter/service/noticeview/${noticevo.no }">${noticevo.title }</a></li>
 								</c:forEach>
 							</ul>
 						</div>
@@ -90,7 +104,8 @@
 						<div>
 							<div id="ranking_box" class="tab-box2">
 								<h4>순위</h4>
-								<div id="carousel-ranking" class="carousel slide" data-ride="carousel">
+								<div id="carousel-ranking" class="carousel slide"
+									data-ride="carousel">
 									<!-- Wrapper for slides -->
 									<div class="carousel-inner" role="listbox">
 										<div class="item active">
@@ -134,7 +149,7 @@
 												<label>이 달의 학교 Top 5</label>
 												<table class="table table-striped rank">
 													<tr>
-														<tr>
+													<tr>
 														<th>순위</th>
 														<th>학교명</th>
 														<th>점수</th>
@@ -150,13 +165,14 @@
 											</div>
 											<div id="main_graderank">
 												<c:choose>
- 													<c:when test="${mainGrade ne null}">
- 														<label>이 달의 우리 학년 Top 5  - ${monthlyMyGradeRank.grade }학년</label>
- 													</c:when>
- 													<c:otherwise>
- 														<label>이 달의 우리 학년 Top 5</label>
- 													</c:otherwise>
- 												</c:choose>
+													<c:when test="${mainGrade ne null}">
+														<label>이 달의 우리 학년 Top 5 -
+															${monthlyMyGradeRank.grade }학년</label>
+													</c:when>
+													<c:otherwise>
+														<label>이 달의 우리 학년 Top 5</label>
+													</c:otherwise>
+												</c:choose>
 												<table class="table table-striped rank">
 													<colgroup>
 														<col width="20%" />
@@ -208,11 +224,13 @@
 </html>
 
 <!-- 출석체크 모달 -->
-<div id="attendModal" class="modal fade attend-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div id="attendModal" class="modal fade attend-modal" tabindex="-1"
+	role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 				<h4 class="modal-title">출석체크</h4>
@@ -237,8 +255,12 @@
 				</c:if>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal" id="remove-attend">다시 보지 않기</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal"
+					id="remove-attend">다시 보지 않기</button>
 			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

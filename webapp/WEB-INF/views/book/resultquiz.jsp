@@ -25,7 +25,7 @@
 	<div class="container-fluid">
 		<c:import url='/WEB-INF/views/include/header.jsp' />
 		<div class="row asideWrap">
-			<div id="navigation" class="col-lg-2">
+			<div id=navigation class="col-lg-2">
 				<c:import url='/WEB-INF/views/include/navi_book.jsp' />
 			</div>
 			<div id="content" class="col-lg-10">
