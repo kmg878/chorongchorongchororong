@@ -22,74 +22,74 @@ $(function(){
 	
 	// 로고
 	$("#logo").mouseover(function(){
-		document.getElementById("logo").src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/logo_p.png";
+		document.getElementById("logo").src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/logo_p.png";
 	});
 	
 	$("#logo").mouseout(function(){
-		document.getElementById("logo").src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/logo.png";
+		document.getElementById("logo").src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/logo.png";
 	});
 	
 	// btn-book
 	$("#btn-book").mouseover(function changeElement(id){
 		var el = document.getElementById("btn-book");
 		el.style.height = "126px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/p_reading.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/p_reading.png";
 	});
 	
 	$("#btn-book").mouseout(function(){
 		var el = document.getElementById("btn-book");
 		el.style.height = "70px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/b_reading.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/b_reading.png";
 	});
 	
 	// btn-rank
 	$("#btn-rank").mouseover(function changeElement(id){
 		var el = document.getElementById("btn-rank");
 		el.style.height = "115px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/p_ranking.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/p_ranking.png";
 	});
 	
 	$("#btn-rank").mouseout(function(){
 		var el = document.getElementById("btn-rank");
 		el.style.height = "70px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/b_ranking.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/b_ranking.png";
 	});
 	// btn-info
 	$("#btn-info").mouseover(function changeElement(id){
 		var el = document.getElementById("btn-info");
 		el.style.height = "111px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/p_myinfo.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/p_myinfo.png";
 	});
 	
 	$("#btn-info").mouseout(function(){
 		var el = document.getElementById("btn-info");
 		el.style.height = "70px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/b_myinfo.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/b_myinfo.png";
 	});
 	// btn-center
 	$("#btn-center").mouseover(function changeElement(id){
 		var el = document.getElementById("btn-center");
 		el.style.height = "116px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/p_center.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/p_center.png";
 	});
 	
 	$("#btn-center").mouseout(function(){
 		var el = document.getElementById("btn-center");
 		el.style.height = "70px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/b_center.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/b_center.png";
 	});
 	//
 	// btn-store
 	$("#btn-store").mouseover(function changeElement(id){
 		var el = document.getElementById("btn-store");
 		el.style.height = "70px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/p_store.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/p_store.png";
 	});
 	
 	$("#btn-store").mouseout(function(){
 		var el = document.getElementById("btn-store");
 		el.style.height = "70px";
-		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/b_store.png";
+		el.src = "http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/b_store.png";
 	});
 	
 	

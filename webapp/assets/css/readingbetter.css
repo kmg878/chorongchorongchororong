@@ -40,7 +40,7 @@ ul, ol {
 	z-index:20;
 	overflow:hidden;
 	background-image:
-		url("http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/bg_header.png");
+		url("http://ec2-52-34-170-68.us-west-2.compute.amazonaws.com/images/design/bg_header.png");
 	background-repeat: repeat;
 }
 
